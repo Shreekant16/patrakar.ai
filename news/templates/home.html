@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .news-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .headline {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .content {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .date-time {
+            font-size: 12px;
+            color: #888;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>पत्रकार.ai</h1>
+    </div>
+
+    <div class="container">
+        {% for i in news %}
+        <div class="news-box">
+            <div class="headline">{{ i.0 }}</div>
+            <div class="content">{{ i.3 }} </div>
+            <div class="date-time">
+                <p>Date: {{ i.1 }}</p>
+                <p>Time: {{ i.2 }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
