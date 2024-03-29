@@ -1,1 +1,1 @@
-Patrakar.AI does the job of news editors... the system scrapes the news from the news portals here I've used Indian Express and will generate the news with the help of gemini... Once deployed no human hand is required..
+Patrakar.AI does the job of news editors... the system scrapes the news(headlines) from the news portals here I've used Indian Express and will generate the news article with the help of gemini... Once deployed no human hand is required..
